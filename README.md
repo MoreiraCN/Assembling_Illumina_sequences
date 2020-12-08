@@ -14,11 +14,11 @@ quast-5.0.2 | http://quast.sourceforge.net/ | Gurevich A, Saveliev V, Vyahhi N, 
 
 ### Step 1 > Assembly with meraculous:
 
-Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using filtered reads https://github.com/MoreiraCN/Filtering_Illumina_sequence. Meraculous script is avalible at https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_assembly_meraculous.
+Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using the filtered reads (https://github.com/MoreiraCN/Filtering_Illumina_sequence).
 
 - Command line used:
 
-run_meraculous.sh -c script_assembly_meraculous
+run_meraculous.sh -c script_assembly_meraculous(https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_assembly_meraculous)
 
 **Input data:**
 
@@ -46,25 +46,25 @@ run_meraculous.sh -c script_assembly_meraculous
 - local_num_procs: valid only when *use_cluster* is off. Max of 50.
 - local_max_retries: number of retries before failure for local jobs.
 
-For more details see: http://1ofdmq2n8tc36m6i46scovo2e.wpengine.netdna-cdn.com/wp-content/uploads/2014/12/Manual.pdf
+For more details see http://1ofdmq2n8tc36m6i46scovo2e.wpengine.netdna-cdn.com/wp-content/uploads/2014/12/Manual.pdf.
 
 **Remarks:**
 
-The values of **insAvg, insSdev and avgReadLen** can be determined using a bbmap package, by the Command line:
+The values of **insAvg, insSdev** and **avgReadLen** can be determined using a bbmap package, by the Command line:
 
 bbmap/bbmerge-auto.sh in1=out_r1_filtered_paired.fq.gz in2=out_r2_filtered_paired.fq.gz ihist=out_filtered_paired_insertsize.txt prefilter=2 rem extend2=100 k=62
 
-For more details see: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/
+For more details see https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/.
 
 The best assembly can be evaluated using the software QUAST, by the Command line: 
 
-python quast-5.0.2/quast.py -o output_file -r reference_genome.fa -t numer_of_CPUs assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa
+python quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t numer_of_CPUs assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa
 
 ### Step 2 > Reassembly with SPAdes:
 
-SPAdes is a assembly toolkit that contains various assembly pipelines. In this second step the best assembly, evaluated by QUAST analisys, will be reassembled with SPAdes. SPAdes script is avalible at https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_reassembly_SPAdes.sh.
+SPAdes is a assembly toolkit that contains various assembly pipelines. In this second step the best assembly, evaluated by QUAST analisys, will be reassembled with SPAdes.
 
-- Command line used: sh script_reassembly_SPAdes
+- Command line used: sh script_reassembly_SPAdes(https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_reassembly_SPAdes.sh)
 
 **Input data:**
 
@@ -78,10 +78,10 @@ SPAdes is a assembly toolkit that contains various assembly pipelines. In this s
 - processors: number of processors.
 - output_folder: output directory.
 
-For more details see: https://cab.spbu.ru/files/release3.12.0/manual.html
+For more details see https://cab.spbu.ru/files/release3.12.0/manual.html.
 
 **Remarks:**
 
 The best assembly can be evaluated using the software QUAST, by the Command line: 
 
-python quast-5.0.2/quast.py -o output_file -r reference_genome.fa -t numer_of_CPUs reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa
+python quast-5.0.2/quast.py -o reassembly_output_file -r reference_genome.fa -t numer_of_CPUs reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa
