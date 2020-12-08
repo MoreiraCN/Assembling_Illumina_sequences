@@ -1,0 +1,44 @@
+###################################
+#
+#  Meraculous params file
+#
+###################################
+
+
+###################################
+#
+# Basic parameters
+#
+###################################
+
+
+# Describe the libraries ( one line per library )
+# lib_seq [ wildcard ][ prefix ][ insAvg ][ insSdev ][ avgReadLen ][ hasInnieArtifact ][ isRevComped ][ useForContigging ][ onoSetId ][ useForGapClosing ][ 5pWiggleRoom ][3pWiggleRoom]
+#
+
+lib_seq /out_r1_filtered_paired.fq.gz,/out_r2_filtered_paired.fq.gz assembly_01_k21 367 64 136 0 0 1 1 1 0 0
+
+
+genome_size 3.2
+
+mer_size 21
+
+diploid_mode 1
+
+num_prefix_blocks 1
+
+min_depth_cutoff 0
+
+###################################
+#
+# Advanced parameters 
+#
+###################################
+
+no_read_validation 1
+
+use_cluster 0
+
+local_num_procs 50
+
+local_max_retries 2
