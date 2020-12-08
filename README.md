@@ -14,7 +14,7 @@ quast-5.0.2 | http://quast.sourceforge.net/ | Gurevich A, Saveliev V, Vyahhi N, 
 
 ### Step 1 > Assembly with meraculous:
 
-Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using filtered reads https://github.com/MoreiraCN/Filtering_Illumina_sequence. Meraculous script is avalible at (incluir link_script_assembly_meraculous).
+Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using filtered reads https://github.com/MoreiraCN/Filtering_Illumina_sequence. Meraculous script is avalible at https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_assembly_meraculous.
 
 - Command line used:
 
