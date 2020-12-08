@@ -58,7 +58,7 @@ For more details see https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-gu
 
 The best assembly can be evaluated using the software QUAST, by the Command line: 
 
-python quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t numer_of_CPUs assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa
+python quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t numer_of_threads assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa
 
 ### Step 2 > Reassembly with SPAdes:
 
@@ -75,7 +75,7 @@ SPAdes is a assembly toolkit that contains various assembly pipelines. In this s
 
 - spades_loc: path to SPAdes.
 - kmers: K-mers values to assembly.
-- processors: number of processors.
+- processors: number of threads.
 - output_folder: output directory.
 
 For more details see https://cab.spbu.ru/files/release3.12.0/manual.html.
@@ -84,4 +84,4 @@ For more details see https://cab.spbu.ru/files/release3.12.0/manual.html.
 
 The best assembly can be evaluated using the software QUAST, by the Command line: 
 
-python quast-5.0.2/quast.py -o reassembly_output_file -r reference_genome.fa -t numer_of_CPUs reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa
+python quast-5.0.2/quast.py -o reassembly_output_file -r reference_genome.fa -t numer_of_threads reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa
