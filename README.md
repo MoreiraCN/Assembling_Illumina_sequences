@@ -62,7 +62,7 @@ python quast-5.0.2/quast.py -o output_file -r reference_genome.fa -t numer_of_CP
 
 ### Step 2 > Reassembly with SPAdes:
 
-SPAdes is a assembly toolkit that contains various assembly pipelines. In this second step the best assembly, evaluated by QUAST analisys, will be reassembled with SPAdes. SPAdes script is avalible at (incluir link_script_reassembly_SPAdes).
+SPAdes is a assembly toolkit that contains various assembly pipelines. In this second step the best assembly, evaluated by QUAST analisys, will be reassembled with SPAdes. SPAdes script is avalible at https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_reassembly_SPAdes.sh.
 
 - Command line used: sh script_reassembly_SPAdes
 
@@ -84,4 +84,4 @@ For more details see: https://cab.spbu.ru/files/release3.12.0/manual.html
 
 The best assembly can be evaluated using the software QUAST, by the Command line: 
 
-python quast-5.0.2/quast.py -o output_file -r reference_genome.fa -t numer_of_CPUs reassembly_01_k57.fa reassembly_02_k59.fa ... assembly_36_k137.fa reference_genome.fa
+python quast-5.0.2/quast.py -o output_file -r reference_genome.fa -t numer_of_CPUs reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa
