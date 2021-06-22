@@ -4,13 +4,13 @@ The following pipeline was used to assembly Illumina sequences of whole genomic 
 
 - Softwares used:
 
-meraculous-v2.2.6_miniconda-v4.8.1 | https://sourceforge.net/projects/meraculous20/ | Chapman JA, Ho I, Sunkara S, Luo S, Schroth G P, Rokhsar DS (2011). Meraculous: De novo genome assembly with short paired-end reads. PLoS ONE, 6(8):e23501.
+[meraculous-v2.2.6_miniconda-v4.8.1](https://sourceforge.net/projects/meraculous20/) Chapman JA, Ho I, Sunkara S, Luo S, Schroth G P, Rokhsar DS (2011). Meraculous: De novo genome assembly with short paired-end reads. PLoS ONE, 6(8):e23501.
 
-SPAdes-3.14.0-Linux | https://cab.spbu.ru/software/spades/ | Nurk S, Bankevich A, Antipov D, Gurevich AA, Korobeynikov A, Lapidus A, Prjibelski AD, Pyshkin A, Sirotkin A, Sirotkin Y, Stepanauskas R, Clingenpeel SR, Woyke T, Mclean JS, Lasken R, Tesler G, Alekseyev MA, Pevzner PA (2013) Assembling single-cell genomes and mini-metagenomes from chimeric MDA products. J Comput Biol, 20(10):714–737.
+[SPAdes-3.14.0-Linux](https://cab.spbu.ru/software/spades/) Nurk S, Bankevich A, Antipov D, Gurevich AA, Korobeynikov A, Lapidus A, Prjibelski AD, Pyshkin A, Sirotkin A, Sirotkin Y, Stepanauskas R, Clingenpeel SR, Woyke T, Mclean JS, Lasken R, Tesler G, Alekseyev MA, Pevzner PA (2013) Assembling single-cell genomes and mini-metagenomes from chimeric MDA products. J Comput Biol, 20(10):714–737.
 
-BBMap_38.49 | https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/ | Bushnell B, Rood J, Singer E (2017) BBMerge–accurate paired shotgun read merging via overlap. PloS one, 12(10),e0185056.
+[BBMap_38.49](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/) Bushnell B, Rood J, Singer E (2017) BBMerge–accurate paired shotgun read merging via overlap. PloS one, 12(10),e0185056.
 
-quast-5.0.2 | http://quast.sourceforge.net/ | Gurevich A, Saveliev V, Vyahhi N, Tesler G (2013) QUAST: quality assessment tool for genome assemblies. Bioinformatics, 29(8):1072–1075.
+[quast-5.0.2](http://quast.sourceforge.net/) Gurevich A, Saveliev V, Vyahhi N, Tesler G (2013) QUAST: quality assessment tool for genome assemblies. Bioinformatics, 29(8):1072–1075.
 
 ### Step 1 > Assembly with meraculous:
 
@@ -46,7 +46,7 @@ run_meraculous.sh -c [script_assembly_meraculous](https://github.com/MoreiraCN/A
 - local_num_procs: valid only when *use_cluster* is off. Max of 50.
 - local_max_retries: number of retries before failure for local jobs.
 
-For more details see http://1ofdmq2n8tc36m6i46scovo2e.wpengine.netdna-cdn.com/wp-content/uploads/2014/12/Manual.pdf.
+For more details see [supplementary information](http://1ofdmq2n8tc36m6i46scovo2e.wpengine.netdna-cdn.com/wp-content/uploads/2014/12/Manual.pdf).
 
 **Remarks:**
 
@@ -54,7 +54,7 @@ The values of **insAvg, insSdev** and **avgReadLen** can be determined using a b
 
 bbmap/bbmerge-auto.sh in1=out_r1_filtered_paired.fq.gz in2=out_r2_filtered_paired.fq.gz ihist=out_filtered_paired_insertsize.txt prefilter=2 rem extend2=100 k=62
 
-For more details see https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/.
+For more details see [supplementary information](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/).
 
 The best assembly can be evaluated using the software QUAST, by the Command line: 
 
@@ -78,7 +78,7 @@ SPAdes is a assembly toolkit that contains various assembly pipelines. In this s
 - processors: number of threads.
 - output_folder: output directory.
 
-For more details see https://cab.spbu.ru/files/release3.12.0/manual.html.
+For more details see [supplementary information](https://cab.spbu.ru/files/release3.12.0/manual.html).
 
 **Remarks:**
 
