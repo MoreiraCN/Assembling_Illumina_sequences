@@ -14,11 +14,11 @@ quast-5.0.2 | http://quast.sourceforge.net/ | Gurevich A, Saveliev V, Vyahhi N, 
 
 ### Step 1 > Assembly with meraculous:
 
-Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using the filtered reads available at [GitHub page](https://github.com/MoreiraCN/Filtering_Illumina_sequences).
+Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using the filtered reads, available at [GitHub page](https://github.com/MoreiraCN/Filtering_Illumina_sequences).
 
 - Command line used:
 
-run_meraculous.sh -c script_assembly_meraculous available at [GitHub page](https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_assembly_meraculous)
+run_meraculous.sh -c script_assembly_meraculous, available at [GitHub page](https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_assembly_meraculous)
 
 **Input data:**
 
@@ -64,7 +64,7 @@ python quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t nu
 
 SPAdes is a assembly toolkit that contains various assembly pipelines. In this second step the best assembly, evaluated by QUAST analisys, will be reassembled with SPAdes.
 
-- Command line used: sh script_reassembly_SPAdes available at [GitHub page](https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_reassembly_SPAdes.sh)
+- Command line used: sh script_reassembly_SPAdes, available at [GitHub page](https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_reassembly_SPAdes.sh)
 
 **Input data:**
 
