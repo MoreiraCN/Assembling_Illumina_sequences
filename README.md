@@ -12,13 +12,11 @@ The following pipeline was used to assembly Illumina sequences of whole genomic 
 
 [quast-5.0.2](http://quast.sourceforge.net/) Gurevich A, Saveliev V, Vyahhi N, Tesler G (2013) QUAST: quality assessment tool for genome assemblies. Bioinformatics, 29(8):1072–1075.
 
-### Step 1 > Assembly with meraculous:
+**Step 1 > Assembly with meraculous:**
 
 Meraculous is a easy going algorithm for whole genome assembly of short paired-end reads. The first step of this process was to assembly the whole genome using the [filtered reads](https://github.com/MoreiraCN/Filtering_Illumina_sequences).
 
-- Command line used:
-
-run_meraculous.sh -c [script_assembly_meraculous](https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_assembly_meraculous)
+`run_meraculous.sh -c script_assembly_meraculous`
 
 **Input data:**
 
@@ -60,11 +58,11 @@ The best assembly can be evaluated using the software QUAST, by the Command line
 
 python quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t numer_of_threads assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa
 
-### Step 2 > Reassembly with SPAdes:
+**Step 2 > Reassembly with SPAdes:**
 
 SPAdes is a assembly toolkit that contains various assembly pipelines. In this second step the best assembly, evaluated by QUAST analisys, will be reassembled with SPAdes.
 
-- Command line used: sh [script_reassembly_SPAdes](https://github.com/MoreiraCN/Assembling_Illumina_sequences/blob/main/script_reassembly_SPAdes.sh)
+`sh script_reassembly_SPAdes`
 
 **Input data:**
 
