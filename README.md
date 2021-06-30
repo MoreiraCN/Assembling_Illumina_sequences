@@ -48,15 +48,15 @@ For more details see [supplementary information](http://1ofdmq2n8tc36m6i46scovo2
 
 **Remarks:**
 
-The values of **insAvg, insSdev** and **avgReadLen** can be determined using a bbmap package, by the Command line:
+The values of **insAvg, insSdev** and **avgReadLen** can be determined using a bbmap package:
 
-bbmap/bbmerge-auto.sh in1=out_r1_filtered_paired.fq.gz in2=out_r2_filtered_paired.fq.gz ihist=out_filtered_paired_insertsize.txt prefilter=2 rem extend2=100 k=62
+`/bbmap/bbmerge-auto.sh in1=out_r1_filtered_paired.fq.gz in2=out_r2_filtered_paired.fq.gz ihist=out_filtered_paired_insertsize.txt prefilter=2 rem extend2=100 k=62`
 
 For more details see [supplementary information](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/).
 
-The best assembly can be evaluated using the software QUAST, by the Command line: 
+The best assembly can be evaluated using the software QUAST: 
 
-python quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t numer_of_threads assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa
+`python /quast-5.0.2/quast.py -o assembly_output_file -r reference_genome.fa -t numer_of_threads assembly_01_k21.fa assembly_02_k23.fa ... assembly_58_k135.fa reference_genome.fa`
 
 **Step 2 > Reassembly with SPAdes:**
 
@@ -80,6 +80,6 @@ For more details see [supplementary information](https://cab.spbu.ru/files/relea
 
 **Remarks:**
 
-The best assembly can be evaluated using the software QUAST, by the Command line: 
+The best assembly can be evaluated using the software QUAST: 
 
-python quast-5.0.2/quast.py -o reassembly_output_file -r reference_genome.fa -t numer_of_threads reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa
+`python /quast-5.0.2/quast.py -o reassembly_output_file -r reference_genome.fa -t numer_of_threads reassembly_01_k57.fa reassembly_02_k59.fa ... reassembly_36_k137.fa reference_genome.fa`
