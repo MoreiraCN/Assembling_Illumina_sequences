@@ -4,7 +4,7 @@ The following pipeline was used to assembly Illumina sequences of whole genomic 
 
 **Softwares used:**
 
-[meraculous-v2.2.6_miniconda-v4.8.1](https://sourceforge.net/projects/meraculous20/). Chapman JA, Ho I, Sunkara S, Luo S, Schroth G P, Rokhsar DS (2011). Meraculous: De novo genome assembly with short paired-end reads. PLoS ONE, 6(8):e23501.
+[meraculous-v2.2.6_miniconda-v4.8.1](https://sourceforge.net/projects/meraculous20/). Chapman JA, Ho I, Sunkara S, Luo S, Schroth G P, Rokhsar DS (2011) Meraculous: De novo genome assembly with short paired-end reads. PLoS ONE, 6(8):e23501.
 
 [SPAdes-3.14.0-Linux](https://cab.spbu.ru/software/spades/). Nurk S, Bankevich A, Antipov D, Gurevich AA, Korobeynikov A, Lapidus A, Prjibelski AD, Pyshkin A, Sirotkin A, Sirotkin Y, Stepanauskas R, Clingenpeel SR, Woyke T, Mclean JS, Lasken R, Tesler G, Alekseyev MA, Pevzner PA (2013) Assembling single-cell genomes and mini-metagenomes from chimeric MDA products. J Comput Biol, 20(10):714–737.
 
