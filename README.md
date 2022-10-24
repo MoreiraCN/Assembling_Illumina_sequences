@@ -8,7 +8,7 @@ The following pipeline was used to assembly Illumina sequences of whole genomic 
 
 [SPAdes-3.14.0-Linux](https://cab.spbu.ru/software/spades/). Nurk S, Bankevich A, Antipov D, Gurevich AA, Korobeynikov A, Lapidus A, Prjibelski AD, Pyshkin A, Sirotkin A, Sirotkin Y, Stepanauskas R, Clingenpeel SR, Woyke T, Mclean JS, Lasken R, Tesler G, Alekseyev MA, Pevzner PA (2013) Assembling single-cell genomes and mini-metagenomes from chimeric MDA products. J Comput Biol, 20(10):714–737.
 
-[BBMap_38.49](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/). Bushnell B, Rood J, Singer E (2017) BBMerge–accurate paired shotgun read merging via overlap. PloS one, 12(10),e0185056.
+[BBMap_38.49](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/). Bushnell B, Rood J, Singer E (2017) BBMerge–accurate paired shotgun read merging via overlap. PloS one, 12(10),e0185056.
 
 [quast-5.0.2](http://quast.sourceforge.net/). Gurevich A, Saveliev V, Vyahhi N, Tesler G (2013) QUAST: quality assessment tool for genome assemblies. Bioinformatics, 29(8):1072–1075.
 
