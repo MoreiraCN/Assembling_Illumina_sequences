@@ -52,7 +52,7 @@ The values of **insAvg, insSdev** and **avgReadLen** can be determined using a b
 
 `/bbmap/bbmerge-auto.sh in1=out_r1_filtered_paired.fq.gz in2=out_r2_filtered_paired.fq.gz ihist=out_filtered_paired_insertsize.txt prefilter=2 rem extend2=100 k=62`
 
-For more details see [supplementary information](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/).
+For more details see [supplementary information](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/bb-tools-user-guide/bbmerge-guide/).
 
 The best assembly can be evaluated using the software QUAST: 
 
