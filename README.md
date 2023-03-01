@@ -1,6 +1,6 @@
 ### Assembling Illumina sequences
 
-The following pipeline was used to assembly Illumina sequences of whole genomic DNA of the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
+The following pipeline was used to assembly Illumina sequences of whole genomic DNA of the species *Holochilus nanus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
 
 **Softwares used:**
 
